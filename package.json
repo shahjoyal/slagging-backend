@@ -1,0 +1,46 @@
+{
+  "name": "abhitech-slaggingpredictor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "express-session": "^1.18.2",
+    "lodash": "^4.17.23",
+    "mathjs": "^15.1.0",
+    "ml-random-forest": "^2.1.0",
+    "mongodb": "^6.14.2",
+    "mongoose": "^8.12.1",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "nodemon": "^3.1.9",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahjoyal/slagging.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shahjoyal/slagging/issues"
+  },
+  "homepage": "https://github.com/shahjoyal/slagging#readme"
+}
