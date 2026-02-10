@@ -691,9 +691,22 @@ app.post("/calculate-aft", async (req, res) => {
 // ---------- ROUTES TO REPLACE ----------
 
 // root route
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'login.html'));
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'public', 'login.html'));
+// });
+
+
+app.get("/", (req, res) => {
+  res.json({
+    status: "Backend running",
+    service: "slagging predictor",
+  });
 });
+
+app.get("/health", (req, res) => {
+  res.json({ ok: true });
+});
+
 
 // DOWNLOAD TEMPLATE (optionally include data via ?includeData=true)
 app.get("/download-template", async (req, res) => {
